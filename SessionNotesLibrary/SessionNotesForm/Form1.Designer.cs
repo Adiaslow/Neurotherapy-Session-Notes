@@ -38,14 +38,28 @@
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.Sessions = new System.Windows.Forms.TabPage();
+            this.Stimulation = new System.Windows.Forms.TabPage();
+            this.Neurofeedback = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
+            this.Summary = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.ElectricCurrentStimulation = new System.Windows.Forms.TabPage();
+            this.ElectromagneticFieldStimulation = new System.Windows.Forms.TabPage();
+            this.SNeurofeedback = new System.Windows.Forms.TabPage();
+            this.SNotes = new System.Windows.Forms.TabPage();
+            this.SessionNotes = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.Sessions.SuspendLayout();
+            this.Stimulation.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.ElectricCurrentStimulation.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -128,70 +142,171 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(15, 41);
+            this.tabControl1.Controls.Add(this.Sessions);
+            this.tabControl1.Controls.Add(this.SessionNotes);
+            this.tabControl1.Controls.Add(this.Stimulation);
+            this.tabControl1.Controls.Add(this.Neurofeedback);
+            this.tabControl1.Controls.Add(this.Summary);
+            this.tabControl1.Location = new System.Drawing.Point(15, 95);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(872, 568);
             this.tabControl1.TabIndex = 12;
             // 
-            // tabPage1
+            // Sessions
             // 
-            this.tabPage1.Controls.Add(this.listView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(864, 542);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Sessions.Controls.Add(this.listBox1);
+            this.Sessions.Location = new System.Drawing.Point(4, 22);
+            this.Sessions.Name = "Sessions";
+            this.Sessions.Padding = new System.Windows.Forms.Padding(3);
+            this.Sessions.Size = new System.Drawing.Size(864, 542);
+            this.Sessions.TabIndex = 0;
+            this.Sessions.Text = "Sessions";
+            this.Sessions.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // Stimulation
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(864, 542);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.Stimulation.Controls.Add(this.tabControl2);
+            this.Stimulation.Location = new System.Drawing.Point(4, 22);
+            this.Stimulation.Name = "Stimulation";
+            this.Stimulation.Padding = new System.Windows.Forms.Padding(3);
+            this.Stimulation.Size = new System.Drawing.Size(864, 542);
+            this.Stimulation.TabIndex = 1;
+            this.Stimulation.Text = "Stimulation";
+            this.Stimulation.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // Neurofeedback
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(864, 542);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 6);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(852, 530);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.Neurofeedback.Location = new System.Drawing.Point(4, 22);
+            this.Neurofeedback.Name = "Neurofeedback";
+            this.Neurofeedback.Padding = new System.Windows.Forms.Padding(3);
+            this.Neurofeedback.Size = new System.Drawing.Size(864, 542);
+            this.Neurofeedback.TabIndex = 2;
+            this.Neurofeedback.Text = "Neurofeedback";
+            this.Neurofeedback.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(808, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 23);
+            this.button3.Size = new System.Drawing.Size(102, 23);
             this.button3.TabIndex = 13;
-            this.button3.Text = "Today\'s Date";
+            this.button3.Text = "Use Today\'s Date";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Summary
+            // 
+            this.Summary.Location = new System.Drawing.Point(4, 22);
+            this.Summary.Name = "Summary";
+            this.Summary.Size = new System.Drawing.Size(864, 542);
+            this.Summary.TabIndex = 3;
+            this.Summary.Text = "Summary";
+            this.Summary.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.ElectricCurrentStimulation);
+            this.tabControl2.Controls.Add(this.ElectromagneticFieldStimulation);
+            this.tabControl2.Controls.Add(this.SNeurofeedback);
+            this.tabControl2.Controls.Add(this.SNotes);
+            this.tabControl2.Location = new System.Drawing.Point(6, 6);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(852, 533);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // ElectricCurrentStimulation
+            // 
+            this.ElectricCurrentStimulation.Controls.Add(this.groupBox1);
+            this.ElectricCurrentStimulation.Location = new System.Drawing.Point(4, 22);
+            this.ElectricCurrentStimulation.Name = "ElectricCurrentStimulation";
+            this.ElectricCurrentStimulation.Padding = new System.Windows.Forms.Padding(3);
+            this.ElectricCurrentStimulation.Size = new System.Drawing.Size(844, 507);
+            this.ElectricCurrentStimulation.TabIndex = 0;
+            this.ElectricCurrentStimulation.Text = "Electric Current Stimulation";
+            this.ElectricCurrentStimulation.UseVisualStyleBackColor = true;
+            // 
+            // ElectromagneticFieldStimulation
+            // 
+            this.ElectromagneticFieldStimulation.Location = new System.Drawing.Point(4, 22);
+            this.ElectromagneticFieldStimulation.Name = "ElectromagneticFieldStimulation";
+            this.ElectromagneticFieldStimulation.Padding = new System.Windows.Forms.Padding(3);
+            this.ElectromagneticFieldStimulation.Size = new System.Drawing.Size(844, 507);
+            this.ElectromagneticFieldStimulation.TabIndex = 1;
+            this.ElectromagneticFieldStimulation.Text = "Electromagnetic Field Stimulation";
+            this.ElectromagneticFieldStimulation.UseVisualStyleBackColor = true;
+            // 
+            // SNeurofeedback
+            // 
+            this.SNeurofeedback.Location = new System.Drawing.Point(4, 22);
+            this.SNeurofeedback.Name = "SNeurofeedback";
+            this.SNeurofeedback.Size = new System.Drawing.Size(844, 507);
+            this.SNeurofeedback.TabIndex = 2;
+            this.SNeurofeedback.Text = "Neurofeedback";
+            this.SNeurofeedback.UseVisualStyleBackColor = true;
+            // 
+            // SNotes
+            // 
+            this.SNotes.Location = new System.Drawing.Point(4, 22);
+            this.SNotes.Name = "SNotes";
+            this.SNotes.Size = new System.Drawing.Size(844, 507);
+            this.SNotes.TabIndex = 3;
+            this.SNotes.Text = "Notes";
+            this.SNotes.UseVisualStyleBackColor = true;
+            // 
+            // SessionNotes
+            // 
+            this.SessionNotes.Location = new System.Drawing.Point(4, 22);
+            this.SessionNotes.Name = "SessionNotes";
+            this.SessionNotes.Size = new System.Drawing.Size(864, 542);
+            this.SessionNotes.TabIndex = 4;
+            this.SessionNotes.Text = "Session Notes";
+            this.SessionNotes.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(832, 234);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Primary Current Channel";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 58);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(852, 472);
+            this.listBox1.TabIndex = 0;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 40);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(362, 23);
+            this.progressBar1.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 821);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.numericUpDown1);
@@ -208,7 +323,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.Sessions.ResumeLayout(false);
+            this.Stimulation.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.ElectricCurrentStimulation.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,11 +346,21 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TabPage Sessions;
+        private System.Windows.Forms.TabPage Stimulation;
+        private System.Windows.Forms.TabPage Neurofeedback;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TabPage Summary;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TabPage SessionNotes;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage ElectricCurrentStimulation;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TabPage ElectromagneticFieldStimulation;
+        private System.Windows.Forms.TabPage SNeurofeedback;
+        private System.Windows.Forms.TabPage SNotes;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
